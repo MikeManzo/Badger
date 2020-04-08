@@ -53,6 +53,6 @@ Look at the demo app for examples of:
 
 ## Copyright and license
 
-Copyright © 2020 Mike Manzo. Released under the MIT License.
+Copyright © 2020 Mike Manzo. Released under the [MIT License](https://github.com/MikeManzo/Badger/blob/master/LICENSE).
 
 [1]: https://github.com/robb/Cartography
