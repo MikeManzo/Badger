@@ -41,15 +41,11 @@ I’ve filed a radar ([rdar://21887757] [1]) that would remove this requirement 
 
 ## Other interesting tidbits
 
-Look at the demo app for examples of:
-
-  * Creating a custom component that loads its view from a Nib (key methods: ```loadNib()``` and ```prepareForInterfaceBuilder()```.
   * Changing the anchor point of a layer without making the layer’s location jump (```NSView``` extention, see ```NSView+ChangeAnchorPointWithoutMakingTheLayerJump.swift```)
-  * Using tags in custom NSViews (workaround for [rdar://21888110] [4] — [see on Open Radar] [5])
+  * Using tags in custom NSViews
   * A category that easily lets you calculate the length (in points) of a string in a given font (see ```NSFont+WidthOfString.swift```)
   * Using ```@IBDesignable``` and ```@IBInspectable``` to create custom components that you can customise using Interface Builder.
-  * Some well-documented code on creating Core Animation transactions and keyframe animations (```CATransaction```, ```CAKeyframeAnimation```)
-  * Using the [Cartography library] [6] for setting up Auto Layout constraints declaratively.
+  * Using the [Cartography library] [1] for setting up Auto Layout constraints declaratively.
 
 ## Copyright and license
 
