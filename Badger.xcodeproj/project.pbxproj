@@ -3,13 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		278B7D6E243CFC6E009A10AD /* Badger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 278B7D64243CFC6E009A10AD /* Badger.framework */; };
 		278B7D73243CFC6E009A10AD /* BadgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278B7D72243CFC6E009A10AD /* BadgerTests.swift */; };
 		278B7D75243CFC6E009A10AD /* Badger.h in Headers */ = {isa = PBXBuildFile; fileRef = 278B7D67243CFC6E009A10AD /* Badger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		278B7D82243CFDCC009A10AD /* Cartography in Frameworks */ = {isa = PBXBuildFile; productRef = 278B7D81243CFDCC009A10AD /* Cartography */; };
+		278B7D86243D0013009A10AD /* NSView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278B7D84243D0012009A10AD /* NSView+Extension.swift */; };
+		278B7D87243D0013009A10AD /* NSFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278B7D85243D0013009A10AD /* NSFont+Extension.swift */; };
+		278B7D8B243D0079009A10AD /* Badge.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278B7D89243D0079009A10AD /* Badge.xib */; };
+		278B7D8C243D0079009A10AD /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278B7D8A243D0079009A10AD /* BadgeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +34,10 @@
 		278B7D6D243CFC6E009A10AD /* BadgerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BadgerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		278B7D72243CFC6E009A10AD /* BadgerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgerTests.swift; sourceTree = "<group>"; };
 		278B7D74243CFC6E009A10AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		278B7D84243D0012009A10AD /* NSView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+Extension.swift"; sourceTree = "<group>"; };
+		278B7D85243D0013009A10AD /* NSFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFont+Extension.swift"; sourceTree = "<group>"; };
+		278B7D89243D0079009A10AD /* Badge.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Badge.xib; sourceTree = "<group>"; };
+		278B7D8A243D0079009A10AD /* BadgeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278B7D82243CFDCC009A10AD /* Cartography in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +81,8 @@
 		278B7D66243CFC6E009A10AD /* Badger */ = {
 			isa = PBXGroup;
 			children = (
+				278B7D88243D0062009A10AD /* BadgeView */,
+				278B7D83243CFFFE009A10AD /* Extensions */,
 				278B7D67243CFC6E009A10AD /* Badger.h */,
 				278B7D68243CFC6E009A10AD /* Info.plist */,
 			);
@@ -84,6 +96,24 @@
 				278B7D74243CFC6E009A10AD /* Info.plist */,
 			);
 			path = BadgerTests;
+			sourceTree = "<group>";
+		};
+		278B7D83243CFFFE009A10AD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				278B7D85243D0013009A10AD /* NSFont+Extension.swift */,
+				278B7D84243D0012009A10AD /* NSView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		278B7D88243D0062009A10AD /* BadgeView */ = {
+			isa = PBXGroup;
+			children = (
+				278B7D89243D0079009A10AD /* Badge.xib */,
+				278B7D8A243D0079009A10AD /* BadgeView.swift */,
+			);
+			path = BadgeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,6 +144,9 @@
 			dependencies = (
 			);
 			name = Badger;
+			packageProductDependencies = (
+				278B7D81243CFDCC009A10AD /* Cartography */,
+			);
 			productName = Badger;
 			productReference = 278B7D64243CFC6E009A10AD /* Badger.framework */;
 			productType = "com.apple.product-type.framework";
@@ -163,6 +196,9 @@
 				Base,
 			);
 			mainGroup = 278B7D5A243CFC6E009A10AD;
+			packageReferences = (
+				278B7D80243CFDCC009A10AD /* XCRemoteSwiftPackageReference "Cartography" */,
+			);
 			productRefGroup = 278B7D65243CFC6E009A10AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -178,6 +214,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278B7D8B243D0079009A10AD /* Badge.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278B7D8C243D0079009A10AD /* BadgeView.swift in Sources */,
+				278B7D86243D0013009A10AD /* NSView+Extension.swift in Sources */,
+				278B7D87243D0013009A10AD /* NSFont+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,9 +379,11 @@
 		278B7D79243CFC6E009A10AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "Badger/BadgeView/Badge.xib Badger/BadgeView Badger/BadgeView/BadgeView.swift Badger/Extensions Badger/Extensions/NSFont+Extension.swift Badger/Extensions/NSView+Extension.swift";
 				DEVELOPMENT_TEAM = 3ETXMLGRJN;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -353,6 +395,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = QJoker.Badger;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -363,9 +406,11 @@
 		278B7D7A243CFC6E009A10AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "Badger/BadgeView/Badge.xib Badger/BadgeView Badger/BadgeView/BadgeView.swift Badger/Extensions Badger/Extensions/NSFont+Extension.swift Badger/Extensions/NSView+Extension.swift";
 				DEVELOPMENT_TEAM = 3ETXMLGRJN;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -377,6 +422,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = QJoker.Badger;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -387,6 +433,7 @@
 		278B7D7C243CFC6E009A10AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3ETXMLGRJN;
@@ -405,6 +452,7 @@
 		278B7D7D243CFC6E009A10AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 3ETXMLGRJN;
@@ -451,6 +499,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		278B7D80243CFDCC009A10AD /* XCRemoteSwiftPackageReference "Cartography" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/robb/Cartography";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		278B7D81243CFDCC009A10AD /* Cartography */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 278B7D80243CFDCC009A10AD /* XCRemoteSwiftPackageReference "Cartography" */;
+			productName = Cartography;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 278B7D5B243CFC6E009A10AD /* Project object */;
 }
