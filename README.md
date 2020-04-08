@@ -1,4 +1,9 @@
 # Badger Framework
+[![Status](https://travis-ci.org/MikeManzo/Ansi.svg?branch=master)](https://travis-ci.org/MikeManzo/Badger)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/mikemanzo/Badger.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/MikeManzo/Badger.svg)
+![GitHub All Releases](https://img.shields.io/github/downloads/MikeManzo/Badger/total.svg)
+![Swift](https://img.shields.io/badge/%20in-swift%205.1-orange.svg)
 
 Unread count badge for macOS. Plays well with auto layout. Is designable and inspectable from Interface Builder (IB).
 
