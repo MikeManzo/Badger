@@ -29,7 +29,7 @@ Decrements the counter by one (will stop at zero).
 
 	myBadgeView.decrementCounter()
 
-## Auto-alignment
+## Auto-Alignment
 
 When using the auto-alignment feature, you *must* set one placeholder constraint on the Badge View. This is to avoid Xcode automatically adding prototyping constraints to the view and interfering with the alignment algorithms.
 
