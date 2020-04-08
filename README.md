@@ -41,6 +41,6 @@ When using the auto-alignment feature, you *must* set one placeholder constraint
   * Using ```@IBDesignable``` and ```@IBInspectable``` to create custom components that you can customise using Interface Builder.
   * Uses the [Cartography library](https://github.com/robb/Cartography) for setting up Auto Layout constraints declaratively.
 
-## Copyright and license
+## Copyright & License Information
 
 Copyright © 2020 Mike Manzo. Released under the [MIT License](https://github.com/MikeManzo/Badger/blob/master/LICENSE).
