@@ -5,7 +5,7 @@
 ![GitHub All Releases](https://img.shields.io/github/downloads/MikeManzo/Badger/total.svg)
 ![Swift](https://img.shields.io/badge/%20in-swift%205.1-orange.svg)
 
-Unread count badge for macOS based on Aral Balkan's [BadgeView](https://source.small-tech.org/project/cocoa-badge/-/blob/master/readme.md). Benefits include playing well with auto layout and support for designable and inspectable support in Interface Builder.
+An NSView-based unread badge count control for macOS based on Aral Balkan's [BadgeView](https://source.small-tech.org/project/cocoa-badge/-/blob/master/readme.md). Benefits include playing well with auto layout and support for designable and inspectable support in [Interface Builder](https://developer.apple.com/xcode/interface-builder/).
 
 ## API
 
