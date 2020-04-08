@@ -33,19 +33,13 @@ Decrements the counter by one (will stop at zero).
 
 When using the auto-alignment feature, you *must* set one placeholder constraint on the Badge View. This is to avoid Xcode automatically adding prototyping constraints to the view and interfering with the alignment algorithms.
 
-I’ve filed a radar ([rdar://21887757] [1]) that would remove this requirement (and bring NSViews into parity with UIViews in terms of constraint handling, making it easier to work with constraints in general for OS X apps).
-
-[Read the full text on Open Radar] [2] and please dupe if you want it to get attention at Apple.
-
-(You can easily dupe a radar using the excellent [QuickRadar app] [3].)
-
 ## Other interesting tidbits
 
   * Changing the anchor point of a layer without making the layer’s location jump (```NSView``` extention, see ```NSView+ChangeAnchorPointWithoutMakingTheLayerJump.swift```)
   * Using tags in custom NSViews
   * A category that easily lets you calculate the length (in points) of a string in a given font (see ```NSFont+WidthOfString.swift```)
   * Using ```@IBDesignable``` and ```@IBInspectable``` to create custom components that you can customise using Interface Builder.
-  * Using the [Cartography library] [1] for setting up Auto Layout constraints declaratively.
+  * Uses the [Cartography library] [1] for setting up Auto Layout constraints declaratively.
 
 ## Copyright and license
 
