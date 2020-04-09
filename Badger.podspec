@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name         = "Badger"
+  s.name         = "BadgerView"
   s.version      = "0.9.0"
   s.summary      = "Unread 'badge count' control for macOS "
 
