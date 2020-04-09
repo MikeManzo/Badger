@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
   s.author       = { "Mike Manzo" => "manzo.mike@gmail.com" }
 
   s.swift_version = "5.0"
-
   s.osx.deployment_target = "10.11"
+  s.dependency  = 'Cartography', :git => 'https://github.com/robb/Cartography'
 
   s.source = { :git => "https://github.com/MikeManzo/Badger.git", :tag => s.version }
   s.source_files = "Badger/**/*.{swift,h,xib}"
