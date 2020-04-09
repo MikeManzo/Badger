@@ -41,6 +41,16 @@ When using the auto-alignment feature, you *must* set one placeholder constraint
   * Using ```@IBDesignable``` and ```@IBInspectable``` to create custom components that you can customise using Interface Builder.
   * Uses the [Cartography library](https://github.com/robb/Cartography) for setting up Auto Layout constraints declaratively.
 
+## Installation
+
+### CocoaPods
+
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate Alamofire into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
+```ruby
+pod 'Badger', '~> 0.9.0'
+```
+
 ## Copyright & License Information
 
 Copyright © 2020 Mike Manzo. Released under the [MIT License](https://github.com/MikeManzo/Badger/blob/master/LICENSE).
