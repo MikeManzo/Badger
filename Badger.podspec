@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.11"
 
   s.source = { :git => "https://github.com/MikeManzo/Badger.git", :tag => s.version }
-  s.source_files = "Badger/*.swift"
+  s.source_files = "Badger/*.{swift,h,xib}"
 end
