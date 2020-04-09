@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.11"
 
   s.source = { :git => "https://github.com/MikeManzo/Badger.git", :tag => s.version }
-  s.source_files = "Badger/**/*.{swift,h,xib}"
+  s.source_files = "Badger/**/*.{swift,h,xib,plist}"
 
   s.dependency 'Cartography', '~> 3.0'
 end
