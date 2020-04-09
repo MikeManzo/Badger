@@ -51,6 +51,7 @@ When using the auto-alignment feature, you *must* set one placeholder constraint
 pod 'Badger', '~> 0.9.0'
 ```
 
+#### Debugging
 In some instances, the IBDesignable will fail to render in Interface Builder.  If that is the case, try adding the following to your podfile for post-install processing:
 ```ruby
 post_install do |installer|
